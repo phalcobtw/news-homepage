@@ -97,6 +97,11 @@ body {
   cursor: pointer;
 }
 
+.button-readmore:hover {
+  color: var(--offwhite);
+  background-color: var(--verydarkblue);
+}
+
 .main-content-second {
   background-color: var(--verydarkblue);
   padding: 3rem 2rem;
@@ -121,10 +126,21 @@ body {
 }
 
 .sidebar-article h3 {
-  color: var(--offwhite);
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 1rem;
+}
+
+.sidebar-article a {
+  text-decoration: none;
+  color: var(--offwhite);
+}
+
+/* .sidebar-article:hover a {
+  color: var(--softorange);
+} */
+.sidebar-article-title:hover {
+  color: var(--softorange);
 }
 
 .sidebar-article {
@@ -165,6 +181,15 @@ body {
   font-weight: 900;
   font-size: 1.5em;
   margin-bottom: 0.7rem;
+}
+
+.article-info-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.article-info-link:hover {
+  color: var(--softred);
 }
 
 .article-info-desc {
@@ -211,6 +236,9 @@ body {
   }
   .menu-link {
     margin-right: 2rem;
+  }
+  .menu-link:hover {
+    color: var(--softred);
   }
   .menu-link:last-of-type {
     margin-right: 0;
