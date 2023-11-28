@@ -22,5 +22,7 @@ var onresize = function () {
   let width = document.body.clientWidth;
   if (width >= 600) {
     navbar.style.display = "flex";
+  } else {
+    navbar.style.display = "none";
   }
 };
