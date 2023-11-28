@@ -42,11 +42,11 @@ body {
 }
 
 .navbar {
-  display: flex;
   padding: 0;
 }
 
 .menu-link {
+  display: block;
   text-decoration: none;
   color: var(--darkgrayishblue);
 }
@@ -198,10 +198,67 @@ body {
   color: var(--darkgrayishblue);
 }
 
+.menu-button {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.header nav.open {
+  position: fixed;
+  opacity: 1;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 2rem;
+  width: 75vw;
+  background-color: white;
+  z-index: 10;
+  box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
+}
+
+.nav-wrapper .open a {
+  position: relative;
+  top: 35%;
+  transform: translateY(-50%);
+  margin-bottom: 1.5rem;
+  font-size: 1.3em;
+}
+
+.header nav .menu-button-close {
+  position: absolute;
+  background: transparent;
+  border: none;
+  outline: none;
+  right: 2rem;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.header nav {
+  display: none;
+  opacity: 0;
+  z-index: -9;
+  transition: all 0.3s ease-in-out;
+}
+
 @media (min-width: 600px) {
   .header,
   .container {
     width: 55%;
+  }
+  .header nav {
+    display: flex;
+    opacity: 1;
+  }
+  .menu-button {
+    display: none;
+  }
+  .menu-button-close {
+    display: none;
   }
   .read-more {
     margin-top: 0;
@@ -233,6 +290,7 @@ body {
   }
   .navbar {
     align-items: center;
+    display: flex;
   }
   .menu-link {
     margin-right: 2rem;
