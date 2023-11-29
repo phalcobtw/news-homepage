@@ -219,9 +219,12 @@ body {
   width: 75vw;
   background-color: white;
   z-index: 10;
-  box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
+  /* box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
   -webkit-box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
-  -moz-box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69); */
+  box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67);
 }
 
 .nav-wrapper .open a {
