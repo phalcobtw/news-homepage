@@ -35,13 +35,25 @@ body {
   margin: 2rem auto 0 auto;
 }
 
+/* HEADER FIJO */
+.fijo {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.body-scroll {
+  padding-top: 6rem;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  position: sticky;
+  /* position: sticky; */
   background-color: white;
-  top: 0;
+  /* top: 0; */
   padding: 2rem 1rem;
   margin: 0;
   width: 100%;
@@ -263,6 +275,15 @@ body {
 }
 
 @media (min-width: 600px) {
+  .fijo {
+    right: 0;
+  }
+  body .fijo {
+    margin: 0 auto;
+  }
+  .body-scroll {
+    padding-top: 12rem;
+  }
   .header,
   .container {
     width: 55%;
