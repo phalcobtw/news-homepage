@@ -32,13 +32,22 @@ body {
   /* margin: 0 20%; */
   max-width: 120rem;
   width: 90%;
-  margin: 5rem auto 0 auto;
+  margin: 2rem auto 0 auto;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  padding: 2rem 1rem;
+  margin: 0;
+  width: 100%;
+  /* box-shadow: -1px 6px 9px -6px rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: -1px 6px 9px -6px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: -1px 6px 9px -6px rgba(0, 0, 0, 0.74); */
 }
 
 .navbar {
@@ -240,7 +249,8 @@ body {
   background: transparent;
   border: none;
   outline: none;
-  right: 2rem;
+  right: 1.5rem;
+  /* top: 6rem; */
   z-index: 9;
   cursor: pointer;
 }
@@ -256,6 +266,10 @@ body {
   .header,
   .container {
     width: 55%;
+  }
+  .header {
+    margin: 2rem auto 0 auto;
+    padding: 2rem 0;
   }
   .header nav {
     display: flex;
