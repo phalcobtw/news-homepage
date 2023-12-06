@@ -229,6 +229,9 @@ body {
   outline: none;
   cursor: pointer;
 }
+.backgroundmenu {
+  display: none;
+}
 
 .header nav.open {
   position: fixed;
@@ -240,12 +243,6 @@ body {
   width: 75vw;
   background-color: white;
   z-index: 10;
-  /* box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
-  -webkit-box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
-  -moz-box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69); */
-  /* box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67);
-  -webkit-box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67);
-  -moz-box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67); */
 }
 
 .container div.bgopen {
@@ -282,7 +279,7 @@ body {
   display: none;
   opacity: 0;
   z-index: -9;
-  /* transition: all 0.3s ease-in-out; */
+  transition: all 0.3s ease-in;
 }
 @media (min-width: 600px) {
   .header,
