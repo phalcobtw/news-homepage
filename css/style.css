@@ -243,9 +243,20 @@ body {
   /* box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
   -webkit-box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: -10px 2px 16px 0px rgba(0, 0, 0, 0.69); */
-  box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67);
+  /* box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67);
   -webkit-box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67);
-  -moz-box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: -142px -1px 0px 16px rgba(0, 0, 0, 0.67); */
+}
+
+.container div.bgopen {
+  position: fixed;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 30vw;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 8;
 }
 
 .nav-wrapper .open a {
@@ -296,11 +307,11 @@ body {
   body .fijo {
     margin: 0 auto;
   }
-  .header nav.open {
+  /* .header nav.open {
     box-shadow: -300px -1px 0px 16px rgba(0, 0, 0, 0.67);
     -webkit-box-shadow: -300px -1px 0px 16px rgba(0, 0, 0, 0.67);
     -moz-box-shadow: -300px -1px 0px 16px rgba(0, 0, 0, 0.67);
-  }
+  } */
 }
 @media (min-width: 1120px) {
   .body-scroll {
@@ -326,6 +337,9 @@ body {
     margin: 0 auto;
   }
   .menu-button {
+    display: none;
+  }
+  .backgroundmenu {
     display: none;
   }
   .menu-button-close {
